@@ -19,7 +19,7 @@ import java.util.Collection;
  */
 public class UserListPresenter implements Presenter {
 
-  private final UserListView viewListView;
+  private final UserListView viewListView;//corresponding with the V in mvp
   private final GetUserListUseCase getUserListUseCase;
   private final UserModelDataMapper userModelDataMapper;
 
@@ -30,7 +30,7 @@ public class UserListPresenter implements Presenter {
     }
     this.viewListView = userListView;
     this.getUserListUseCase = getUserListUserCase;
-    this.userModelDataMapper = userModelDataMapper;
+    this.userModelDataMapper = userModelDataMapper;//corresponding with the M in MVP
   }
 
   @Override public void resume() {}
